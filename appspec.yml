@@ -5,18 +5,10 @@ files:
     destination: /src/
 hooks:
   BeforeInstall:
-    - location: install_dependencies.sh
-      timeout: 300
+    - npm install
       runas: root
   ApplicationStart:
-    - location: start_server.sh
-      timeout: 300
+    - npm run start
   ApplicationStop:
-    - location: stop_server.sh
-      timeout: 300
+    - npm run stop
       runas: root
-  ValidateService:
-    - location: validate_server.sh
-      timeout: 300
-      runas: root
-
