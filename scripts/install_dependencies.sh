@@ -4,5 +4,5 @@ nvm install node
 node -e "console.log('Running Node.js ' + process.version)"
 nvm install 14
 node -v
-cd ..
+rm -rf package-lock.json
 npm install
