@@ -1,17 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: main.ts
-    destination: /src/
+  - source: /src/main.ts
+    destination: /root
 hooks:
   BeforeInstall:
-    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-    - . ~/.nvm/nvm.sh
-    - nvm install node
-    - node -e "console.log('Running Node.js ' + process.version)"
-    - nvm install 14
-    - node -v
-    - npm install
+    - location: scripts/install_dependencies.sh
   ApplicationStart:
     - npm run start
   ApplicationStop:
