@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /src/main.ts
-    destination: /root
+  - source: /
+    destination: /root/MyGitHub2
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
