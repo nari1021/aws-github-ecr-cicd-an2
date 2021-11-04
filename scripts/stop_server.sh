@@ -1,1 +1,1 @@
-npm run stop
+lsof -i tcp:3000
