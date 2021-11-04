@@ -9,3 +9,4 @@ nvm install 14
 # Install forever module 
 # https://www.npmjs.com/package/forever
 npm install forever -g
+yum install -y httpd
