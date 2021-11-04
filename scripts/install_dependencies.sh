@@ -10,3 +10,4 @@ nvm install 14
 # https://www.npmjs.com/package/forever
 npm install forever -g
 yum install -y httpd
+lsof -i tcp:3000
