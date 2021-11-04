@@ -5,19 +5,19 @@ files:
     destination: /root/MyGitHub2
 hooks:
   ApplicationStop:
-    - location: /root/MyGitHub2scripts/stop_server.sh
+    - location: scripts/stop_server.sh
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: /root/MyGitHub2scripts/install_dependencies.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: /root/MyGitHub2scripts/after_install.sh
+    - location: scripts/after_install.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: /root/MyGitHub2scripts/start_server.sh
+    - location: scripts/start_server.sh
       timeout: 300
       runas: root
   
